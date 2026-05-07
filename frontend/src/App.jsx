@@ -50,7 +50,7 @@ export default function App() {
     setResult(null);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/factcheck", {
+      const res = await fetch("https://truth-lens-fact-checking-app.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
